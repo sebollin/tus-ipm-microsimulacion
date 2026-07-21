@@ -2,6 +2,7 @@
 
 **Uruguay, ECH 2025 · proyección predictiva, no causal**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21481131.svg)](https://doi.org/10.5281/zenodo.21481131)
 ![Verificación](https://github.com/sebollin/tus-ipm-microsimulacion/actions/workflows/verificar.yml/badge.svg)
 ![Licencia código](https://img.shields.io/badge/c%C3%B3digo-MIT-blue)
 ![Licencia contenido](https://img.shields.io/badge/contenido-CC%20BY%204.0-blue)
@@ -192,7 +193,8 @@ Archivo BibTeX en [`references/references.bib`](references/references.bib).
              sobre la pobreza multidimensional (Uruguay, ECH 2025)},
   year    = {2026},
   url     = {https://github.com/sebollin/tus-ipm-microsimulacion},
-  version = {1.0.1}
+  version = {1.0.1},
+  doi     = {10.5281/zenodo.21481132}
 }
 ```
 
