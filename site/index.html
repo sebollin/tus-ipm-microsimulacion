@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Figuras — TUS y pobreza multidimensional (Uruguay, ECH 2025)</title>
+<meta name="description" content="Galería de figuras del estudio de microsimulación del efecto de aumentos de la Tarjeta Uruguay Social sobre la pobreza multidimensional.">
+<meta name="author" content="Sebastián Lucas">
+<style>
+  :root {
+    --azul: #0072B2; --azul-oscuro: #0b3a5c; --tinta: #1a1a1a;
+    --gris: #5a6570; --fondo: #ffffff; --tarjeta: #f4f7fa; --borde: #d7dee5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --tinta: #e8e8e8; --gris: #9aa5b0; --fondo: #14181c;
+            --tarjeta: #1d242b; --borde: #303a44; --azul-oscuro: #7db8dc; }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: system-ui, "DejaVu Sans", sans-serif; background: var(--fondo);
+         color: var(--tinta); line-height: 1.55; }
+  header { max-width: 1080px; margin: 0 auto; padding: 2.5rem 1.25rem 1rem; }
+  header h1 { color: var(--azul-oscuro); font-size: 1.55rem; line-height: 1.25; }
+  header p.bajada { color: var(--gris); margin-top: .5rem; max-width: 62ch; }
+  header nav { margin-top: .9rem; font-size: .92rem; }
+  header nav a { color: var(--azul); text-decoration: none; margin-right: 1.2rem; }
+  header nav a:hover, header nav a:focus { text-decoration: underline; }
+  main { max-width: 1080px; margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+  ol.galeria { list-style: none; padding: 0; display: grid;
+               grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.1rem; }
+  .tarjeta { background: var(--tarjeta); border: 1px solid var(--borde);
+             border-radius: 10px; overflow: hidden; display: flex; flex-direction: column; }
+  .tarjeta a.miniatura { display: block; background: #fff; }
+  .tarjeta img { width: 100%; height: 200px; object-fit: cover; object-position: top;
+                 display: block; }
+  .tarjeta .cuerpo { padding: .85rem .95rem 1rem; flex: 1; display: flex;
+                     flex-direction: column; gap: .45rem; }
+  .tarjeta h2 { font-size: 1.0rem; line-height: 1.3; }
+  .tarjeta h2 span.num { color: var(--gris); font-weight: 600; margin-right: .35rem; }
+  .tarjeta p { font-size: .88rem; color: var(--gris); flex: 1; }
+  .enlaces { display: flex; gap: .9rem; font-size: .88rem; }
+  .enlaces a { color: var(--azul); text-decoration: none; font-weight: 600; }
+  .enlaces a:hover, .enlaces a:focus { text-decoration: underline; }
+  footer { max-width: 1080px; margin: 0 auto; padding: 0 1.25rem 2.5rem;
+           color: var(--gris); font-size: .85rem; }
+  footer a { color: var(--azul); }
+</style>
+</head>
+<body>
+<header>
+  <h1>El estudio en figuras — aumentos de la TUS y pobreza multidimensional</h1>
+  <p class="bajada">Diez figuras con los resultados del estudio de microsimulación
+  (Uruguay, ECH 2025). Cada una tiene versión interactiva — con los valores exactos
+  de cada escenario — y versiones PNG y PDF para documentos e impresión.</p>
+  <nav>
+    <a href="..">← Repositorio</a>
+    <a href="../report/sintesis-ejecutiva.pdf">Síntesis ejecutiva (PDF)</a>
+  </nav>
+</header>
+<main>
+<ol class="galeria">
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/01_el_aumento_rinde_donde_llega.html" aria-label="Figura 1 interactiva">
+      <img src="../figures/png/01_el_aumento_rinde_donde_llega.png" alt="Figura 1: curvas de efecto sobre incidencia, intensidad e IPM por tamaño de aumento, lentes nacional y beneficiarios" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">1</span>El aumento rinde donde llega</h2>
+      <p>Las tres métricas por tamaño de aumento, en dos lentes: el efecto nacional es el de beneficiarios diluido en proporción exacta a la cobertura.</p>
+      <div class="enlaces"><a href="figures/01_el_aumento_rinde_donde_llega.html">Interactiva</a><a href="../figures/pdf/01_el_aumento_rinde_donde_llega.pdf">PDF</a></div>
+    </div>
+  </li>
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/02_pobreza_y_efecto_por_quintil.html" aria-label="Figura 2 interactiva">
+      <img src="../figures/png/02_pobreza_y_efecto_por_quintil.png" alt="Figura 2: incidencia e intensidad por quintil de ingreso, situación actual y con aumento del 50%" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">2</span>La pobreza — y el efecto — viven en el quintil más pobre</h2>
+      <p>Casi la mitad del quintil 1 está en pobreza multidimensional, y el efecto del aumento se concentra casi exclusivamente ahí.</p>
+      <div class="enlaces"><a href="figures/02_pobreza_y_efecto_por_quintil.html">Interactiva</a><a href="../figures/pdf/02_pobreza_y_efecto_por_quintil.pdf">PDF</a></div>
+    </div>
+  </li>
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/03_donde_actua_el_dinero.html" aria-label="Figura 3 interactiva">
+      <img src="../figures/png/03_donde_actua_el_dinero.png" alt="Figura 3: respuesta de cada indicador de privación al aumento, junto a su prevalencia actual" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">3</span>Dónde actúa el dinero — y dónde no</h2>
+      <p>Doce carencias responden al ingreso; tres casi no lo hacen y piden políticas sectoriales: el límite honesto de la transferencia.</p>
+      <div class="enlaces"><a href="figures/03_donde_actua_el_dinero.html">Interactiva</a><a href="../figures/pdf/03_donde_actua_el_dinero.pdf">PDF</a></div>
+    </div>
+  </li>
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/04_de_que_esta_hecha_la_pobreza.html" aria-label="Figura 4 interactiva">
+      <img src="../figures/png/04_de_que_esta_hecha_la_pobreza.png" alt="Figura 4: aporte de cada dimensión al IPM y cuánto lo reduce el aumento" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">4</span>De qué está hecha la pobreza — y qué parte se mueve</h2>
+      <p>El aporte de cada dimensión al índice — empleo y educación encabezan — y cuánto reduce cada una el escenario central.</p>
+      <div class="enlaces"><a href="figures/04_de_que_esta_hecha_la_pobreza.html">Interactiva</a><a href="../figures/pdf/04_de_que_esta_hecha_la_pobreza.pdf">PDF</a></div>
+    </div>
+  </li>
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/05_instrumentos_y_poblaciones.html" aria-label="Figura 5 interactiva">
+      <img src="../figures/png/05_instrumentos_y_poblaciones.png" alt="Figura 5: solapamiento entre la población elegible por focalización y la población en pobreza multidimensional" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">5</span>Instrumentos distintos, poblaciones que se solapan</h2>
+      <p>El índice con el que se focaliza y el que mide la pobreza clasifican parecido pero no igual — por diseño, no por error.</p>
+      <div class="enlaces"><a href="figures/05_instrumentos_y_poblaciones.html">Interactiva</a><a href="../figures/pdf/05_instrumentos_y_poblaciones.pdf">PDF</a></div>
+    </div>
+  </li>
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/06_bono_crianza_2026.html" aria-label="Figura 6 interactiva">
+      <img src="../figures/png/06_bono_crianza_2026.png" alt="Figura 6: efectos del aumento 2026 del Bono Crianza sobre los hogares beneficiarios" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">6</span>Bono Crianza 2026: qué cambia para quienes lo reciben</h2>
+      <p>La política ya decidida: ~204 de los 24.702 hogares beneficiarios dejarían la pobreza multidimensional; ambas incertidumbres excluyen el cero.</p>
+      <div class="enlaces"><a href="figures/06_bono_crianza_2026.html">Interactiva</a><a href="../figures/pdf/06_bono_crianza_2026.pdf">PDF</a></div>
+    </div>
+  </li>
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/07_cuanto_rinde_y_como_repartir.html" aria-label="Figura 7 interactiva">
+      <img src="../figures/png/07_cuanto_rinde_y_como_repartir.png" alt="Figura 7: eficiencia del gasto por tamaño de aumento y comparación de reglas de reparto a presupuesto fijo" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">7</span>Cuánto rinde el gasto — y cómo repartirlo</h2>
+      <p>La eficiencia cae con dosis mayores; a presupuesto fijo, las reglas de reparto son indistinguibles entre sí. El cuánto importa; el cómo, casi no.</p>
+      <div class="enlaces"><a href="figures/07_cuanto_rinde_y_como_repartir.html">Interactiva</a><a href="../figures/pdf/07_cuanto_rinde_y_como_repartir.pdf">PDF</a></div>
+    </div>
+  </li>
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/08_conclusiones_y_supuestos.html" aria-label="Figura 8 interactiva">
+      <img src="../figures/png/08_conclusiones_y_supuestos.png" alt="Figura 8: resultado central recalculado con umbrales alternativos de identificación de pobreza" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">8</span>Las conclusiones no penden de un supuesto</h2>
+      <p>El resultado central recalculado cambiando el umbral que define quién es pobre: las diferencias son de centésimas.</p>
+      <div class="enlaces"><a href="figures/08_conclusiones_y_supuestos.html">Interactiva</a><a href="../figures/pdf/08_conclusiones_y_supuestos.pdf">PDF</a></div>
+    </div>
+  </li>
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/09_mapa_de_la_cobertura.html" aria-label="Figura 9 interactiva">
+      <img src="../figures/png/09_mapa_de_la_cobertura.png" alt="Figura 9: cobertura de transferencias dentro del grupo de hogares más vulnerable" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">9</span>El mapa de la cobertura</h2>
+      <p>Del grupo más vulnerable (387 mil hogares), 47,9% recibe TUS o AFAM-PE: división de tareas entre instrumentos, no una falla.</p>
+      <div class="enlaces"><a href="figures/09_mapa_de_la_cobertura.html">Interactiva</a><a href="../figures/pdf/09_mapa_de_la_cobertura.pdf">PDF</a></div>
+    </div>
+  </li>
+  <li class="tarjeta">
+    <a class="miniatura" href="figures/10_dos_varas_una_historia.html" aria-label="Figura 10 interactiva">
+      <img src="../figures/png/10_dos_varas_una_historia.png" alt="Figura 10: comparación de la respuesta de la pobreza monetaria y la multidimensional a los aumentos" loading="lazy"></a>
+    <div class="cuerpo">
+      <h2><span class="num">10</span>Dos varas, una historia</h2>
+      <p>La pobreza monetaria responde más rápido por definición; el IPM exige que cambien las privaciones concretas. Por eso es la vara principal del estudio.</p>
+      <div class="enlaces"><a href="figures/10_dos_varas_una_historia.html">Interactiva</a><a href="../figures/pdf/10_dos_varas_una_historia.pdf">PDF</a></div>
+    </div>
+  </li>
+</ol>
+</main>
+<footer>
+  <p>Lucas, S. (2026). <em>Microsimulación del efecto de aumentos de la Tarjeta Uruguay
+  Social sobre la pobreza multidimensional (Uruguay, ECH 2025)</em>. Contenido bajo
+  <a href="https://creativecommons.org/licenses/by/4.0/deed.es">CC BY 4.0</a>.
+  Proyección predictiva, no causal.</p>
+</footer>
+</body>
+</html>

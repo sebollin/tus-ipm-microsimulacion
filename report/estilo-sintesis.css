@@ -1,0 +1,49 @@
+@page { size: A4; margin: 20mm 18mm 22mm 18mm; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; }
+body {
+  font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+  font-size: 10.2pt; line-height: 1.5; color: #1a1a1a;
+  max-width: 100%; margin: 0; padding: 0;
+}
+h1 {
+  font-size: 20pt; line-height: 1.25; margin: 0 0 2pt 0; color: #0b3a5c;
+}
+h1 + h2 {
+  font-size: 13pt; color: #555; font-weight: normal; border: none;
+  margin: 0 0 14pt 0; padding: 0;
+}
+h2 {
+  font-size: 13.5pt; color: #0b3a5c; margin: 22pt 0 8pt 0; padding-bottom: 3pt;
+  border-bottom: 1.2pt solid #d8dee4; break-after: avoid; page-break-after: avoid;
+}
+p { margin: 6pt 0; text-align: justify; }
+blockquote {
+  margin: 10pt 0 14pt 0; padding: 8pt 12pt; border-left: 3pt solid #0072B2;
+  background: #f4f7fa; color: #333;
+}
+blockquote p { margin: 2pt 0; text-align: left; }
+strong { color: #111; }
+table {
+  width: 100%; border-collapse: collapse; margin: 10pt 0 12pt 0;
+  font-size: 9.2pt; break-inside: avoid; page-break-inside: avoid;
+}
+th {
+  text-align: left; border-bottom: 1.4pt solid #444; padding: 4pt 6pt;
+  background: #f0f3f6;
+}
+td { border-bottom: 0.6pt solid #d9d9d9; padding: 4pt 6pt; vertical-align: top; }
+tr:nth-child(even) td { background: #fafbfc; }
+img {
+  max-width: 100%; height: auto; display: block; margin: 8pt auto 4pt auto;
+  break-inside: avoid; page-break-inside: avoid;
+}
+ol, ul { margin: 6pt 0; padding-left: 18pt; }
+li { margin: 4pt 0; }
+li > p { margin: 3pt 0; }
+em { color: #444; }
+/* las 10 figuras: cada ítem numerado con su imagen arranca sin cortarse feo */
+section#el-estudio-en-figuras-ideas-fuerza ol > li,
+li:has(> img) { break-inside: avoid-page; }
+
+header#title-block-header { display: none; }

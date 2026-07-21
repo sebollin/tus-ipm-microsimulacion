@@ -1,0 +1,12 @@
+# Entorno mínimo para src/gpu-runtime.
+# CuPy es opcional: sin GPU, el paquete funciona en modo CPU
+# (tests y `benchmark --cpu-only`); descomente cupy para habilitar CUDA.
+name: gpu-runtime
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - numpy
+  - pytest
+  # Ejecución en GPU (requiere driver NVIDIA con CUDA 12.x):
+  # - cupy

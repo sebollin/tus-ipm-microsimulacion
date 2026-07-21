@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Si usás este trabajo, citalo con los metadatos de este archivo."
+type: software
+title: "Microsimulación del efecto de aumentos de la Tarjeta Uruguay Social sobre la pobreza multidimensional (Uruguay, ECH 2025)"
+authors:
+  - family-names: "Lucas"
+    given-names: "Sebastián"
+version: "1.0.0"
+date-released: "2026-07-21"
+license: MIT
+keywords:
+  - pobreza multidimensional
+  - microsimulación
+  - transferencias monetarias
+  - Tarjeta Uruguay Social
+  - Uruguay
+  - Alkire-Foster
+abstract: >-
+  Microsimulación del efecto de aumentos de la Tarjeta Uruguay Social (TUS)
+  sobre la pobreza multidimensional en Uruguay, medida con el Índice de
+  Pobreza Multidimensional oficial (INE, 2024) sobre la ECH 2025. Proyección
+  predictiva con incertidumbre de diseño y Monte Carlo; resultados agregados,
+  figuras reproducibles y arquitectura metodológica.
+repository-code: "https://github.com/sebollin/tus-ipm-microsimulacion"
+url: "https://sebollin.github.io/tus-ipm-microsimulacion/site/"

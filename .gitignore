@@ -1,0 +1,37 @@
+# Este repositorio solo contiene resultados agregados, figuras y código público.
+# Ningún microdato ni derivado por registro debe entrar, bajo ninguna excepción.
+*.rds
+*.RData
+*.Rdata
+*.dta
+*.sav
+*.parquet
+*.arrow
+*.feather
+*.fst
+*.sqlite
+*.duckdb
+*.db
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+data/
+outputs/
+intermediate/
+
+# Entornos y artefactos locales
+.Rproj.user/
+.Rhistory
+.RData
+renv/library/
+renv/staging/
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
