@@ -192,7 +192,7 @@ Archivo BibTeX en [`references/references.bib`](references/references.bib).
              sobre la pobreza multidimensional (Uruguay, ECH 2025)},
   year    = {2026},
   url     = {https://github.com/sebollin/tus-ipm-microsimulacion},
-  version = {1.0.0}
+  version = {1.0.1}
 }
 ```
 
